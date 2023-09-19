@@ -31,3 +31,5 @@ OVN_GENEVE_OVERHEAD=10000
 LB_PHYSICAL_INTERFACE=enp0s9
 LB_INTERFACE_MAPPINGS=public:enp0s9
 EOF
+cd ../
+chown stack:stack -R devstack
