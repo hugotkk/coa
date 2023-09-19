@@ -2,7 +2,7 @@
 
 sudo useradd -s /bin/bash -d /opt/stack -m stack
 echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stack
-sudo apt install -y git
+sudo apt install -y git openvswitch-switch
 sudo su - stack
 git clone https://opendev.org/openstack/devstack
 cd devstack
