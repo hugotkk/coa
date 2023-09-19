@@ -7,6 +7,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "private_network", type: "dhcp"
   config.vm.provision "shell", path: "post_install.sh"
   config.vm.provider "virtualbox" do |vb|
+    vb.name = "lab-coa2"
     vb.memory = "8192"
     vb.cpus = 4
     vb.customize ["modifyvm", :id, "--nic3", "natnetwork"]
