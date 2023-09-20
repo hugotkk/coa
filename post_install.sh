@@ -9,6 +9,8 @@ cd devstack
 #git checkout stable/ussuri
 cat <<EOF | tee local.conf
 [[local|localrc]]
+LOGFILE=/opt/stack/logs/stack.sh.log
+
 ADMIN_PASSWORD=openstack
 DATABASE_PASSWORD=openstack
 RABBIT_PASSWORD=openstack
