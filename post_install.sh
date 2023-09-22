@@ -6,7 +6,7 @@ sudo apt install -y git openvswitch-switch
 cd /opt/stack
 git clone https://opendev.org/openstack/devstack
 cd devstack
-#git checkout stable/ussuri
+git checkout stable/2023.1
 cat <<EOF | tee local.conf
 [[local|localrc]]
 LOGFILE=/opt/stack/logs/stack.sh.log
