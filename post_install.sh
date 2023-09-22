@@ -40,5 +40,6 @@ ENABLE_TENANT_TUNNELS=True
 LB_PHYSICAL_INTERFACE=enp0s9
 LB_INTERFACE_MAPPINGS=public:enp0s9
 EOF
-cd ../
-chown stack:stack -R devstack
+
+chmod 755 /opt/stack/devstack
+chown stack:stack -R /opt/stack/devstack
