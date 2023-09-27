@@ -17,16 +17,28 @@ RABBIT_PASSWORD=openstack
 SERVICE_PASSWORD=openstack
 HOST_IP=10.0.114.11
 
-FLOATING_RANGE="203.0.114.0/24"
-PUBLIC_NETWORK_GATEWAY="203.0.114.1"
+# Enable Security Group
+Q_USE_SECGROUP=True
+
+# Disable Subnet Pool
+USE_SUBNETPOOL=False
+
+# Use for create bridge and add network device to the bridge
+PUBLIC_BRIDGE=br-ex
 PUBLIC_INTERFACE=enp0s9
 
-Q_USE_SECGROUP=True
-USE_SUBNETPOOL=False
+# Use for setp OVN bridge mapping
+PHYSICAL_NETWORK=providernet
+OVS_PHYSICAL_BRIDGE=br-ex
+
 IP_VERSION=4
 
-PROVIDER_NETWORK_TYPE="flat"
+# Use for setup public network (like web gui)
 Q_USE_PROVIDERNET_FOR_PUBLIC=True
+PUBLIC_NETWORK_NAME=provider
+PUBLIC_PHYSICAL_NETWORK=providernet
+PUBLIC_NETWORK_GATEWAY=203.0.114.1
+FLOATING_RANGE=203.0.114.0/24
 EOF
 
 chmod 755 /opt/stack/devstack
