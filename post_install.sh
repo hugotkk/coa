@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BRNACH=stable/2023.1
+BRANCH=stable/2023.1
 REPO=https://opendev.org/openstack/devstack
 WORKDIR=/opt/stack/devstack
 PLUGIN=ovn

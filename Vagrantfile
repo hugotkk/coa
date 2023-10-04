@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
     end
   end
   config.vm.define "coa-compute" do |vm2|
-    vm2.vm.network "private_network", ip: "10.0.114.12", name: "coa-host2"
+    vm2.vm.network "private_network", ip: "10.0.114.12", name: "coa-host"
     vm2.vm.provider "virtualbox" do |vb|
       vb.name = "coa-compute"
       vb.memory = "4096"
