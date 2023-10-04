@@ -3,7 +3,7 @@
 BRNACH=stable/2023.1
 REPO=https://opendev.org/openstack/devstack
 WORKDIR=/opt/stack/devstack
-PLUGIN=lb
+PLUGIN=ovn
 
 useradd -s /bin/bash -d /opt/stack -m stack
 echo "stack ALL=(ALL) NOPASSWD: ALL" | tee /etc/sudoers.d/stack
