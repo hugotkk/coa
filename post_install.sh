@@ -10,7 +10,7 @@ echo "stack ALL=(ALL) NOPASSWD: ALL" | tee /etc/sudoers.d/stack
 apt install -y git
 mkdir /opt/stack/devstack
 git clone --branch $BRANCH $REPO $WORKDIR
-cp /home/vagrant/local-*.conf $WORKDIR
+mv /home/vagrant/local-*.conf $WORKDIR
 ln -s local.conf local-$PLUGIN.cnf
 chmod 755 /opt/stack/devstack
 chown stack:stack -R /opt/stack/devstack
