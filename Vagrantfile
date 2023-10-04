@@ -5,6 +5,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "file", source: "./local-ovn.conf", destination: "/home/vagrant/local-ovn.conf"
   config.vm.provision "file", source: "./local-lb.conf", destination: "/home/vagrant/local-lb.conf"
   config.vm.provision "file", source: "./local-ovs.conf", destination: "/home/vagrant/local-ovs.conf"
+  config.vm.provision "file", source: "./local-ovn-compute.conf", destination: "/home/vagrant/local-ovn-compute.conf"
   config.vm.provision "shell", path: "post_install.sh"
   config.vm.define "coa-controller" do |vm1|
     vm1.vm.network "private_network", ip: "10.0.114.11", name: "coa-host"
