@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
     vm1.vm.network "private_network", type: "dhcp"
     vm1.vm.provider "virtualbox" do |vb|
       vb.name = "coa-controller"
-      vb.memory = "4096"
+      vb.memory = "8196"
       vb.cpus = 4
       vb.customize ["modifyvm", :id, "--nic3", "natnetwork"]
       vb.customize ["modifyvm", :id, "--nat-network3", "coa-nat"]
