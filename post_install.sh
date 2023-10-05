@@ -20,3 +20,5 @@ fi
 chmod 755 /opt/stack
 chmod 755 /opt/stack/devstack
 chown stack:stack -R /opt/stack/devstack
+cd /opt/stack/devstack
+sudo -u stack ./stack.sh
