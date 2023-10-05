@@ -68,3 +68,10 @@ Open your web browser and navigate to the Horizon dashboard using the following 
 Login with the following credentials:
 - Username: admin
 - Password: openstack
+
+
+If compute server was not available on horizon, run this on controller
+```
+nova-manage cell_v2 discover_hosts
+```
+
