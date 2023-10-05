@@ -15,6 +15,7 @@ Vagrant.configure("2") do |config|
       vb.cpus = 4
       vb.customize ["modifyvm", :id, "--nic3", "natnetwork"]
       vb.customize ["modifyvm", :id, "--nat-network3", "coa-nat"]
+      vb.customize ["modifyvm", :id, "--nicpromisc3", "allow-all"]
     end
   end
   config.vm.define "coa-compute" do |vm2|
@@ -26,6 +27,7 @@ Vagrant.configure("2") do |config|
       vb.cpus = 4
       vb.customize ["modifyvm", :id, "--nic3", "natnetwork"]
       vb.customize ["modifyvm", :id, "--nat-network3", "coa-nat"]
+      vb.customize ["modifyvm", :id, "--nicpromisc3", "allow-all"]
     end
   end
 end
