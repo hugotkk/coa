@@ -10,6 +10,7 @@ Vagrant.configure("2") do |config|
     vm1.vm.network :forwarded_port, guest: 22, host: 12223, id: 'ssh'
     vm1.vm.network "private_network", ip: "10.0.114.11", name: "coa-host"
     vm1.vm.network "private_network", type: "dhcp"
+    vm1.vm.hostname = "coa-controller"
     vm1.vm.provider "virtualbox" do |vb|
       vb.name = "coa-controller"
       vb.memory = "8196"
@@ -23,6 +24,7 @@ Vagrant.configure("2") do |config|
     vm2.vm.network :forwarded_port, guest: 22, host: 12223, id: 'ssh'
     vm2.vm.network "private_network", ip: "10.0.114.12", name: "coa-host"
     vm2.vm.network "private_network", type: "dhcp"
+    vm2.vm.hostname = "coa-compute"
     vm2.vm.provider "virtualbox" do |vb|
       vb.name = "coa-compute"
       vb.memory = "8196"
