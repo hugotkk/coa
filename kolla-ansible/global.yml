@@ -36,13 +36,13 @@ workaround_ansible_issue_8743: yes
 # Kolla options
 ###############
 # Valid options are [ COPY_ONCE, COPY_ALWAYS ]
-config_strategy: "COPY_ALWAYS"
+#config_strategy: "COPY_ALWAYS"
 
 # Valid options are ['centos', 'debian', 'rocky', 'ubuntu']
 kolla_base_distro: "ubuntu"
 
 # Do not override this unless you know what you are doing.
-openstack_release: "master"
+#openstack_release: "master"
 
 # Docker image tag used by default.
 #openstack_tag: "{{ openstack_release ~ openstack_tag_suffix }}"
