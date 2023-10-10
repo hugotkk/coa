@@ -692,7 +692,7 @@ neutron_ovn_dhcp_agent: "yes"
 # the special swift partition for example: "KOLLA_SWIFT_DATA", if "prefix" mode was
 # selected then swift_devices_name should specify a pattern which would match to
 # filesystems' labels prepared for swift.
-#swift_devices_name: "KOLLA_SWIFT_DATA"
+swift_devices_name: "KOLLA_SWIFT_DATA"
 
 # Configure swift upgrade option, due to currently kolla support
 # two upgrade ways for swift: legacy_upgrade and rolling_upgrade
