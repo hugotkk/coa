@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
     vm1.vm.hostname = "coa-controller"
     vm1.vm.provider "virtualbox" do |vb|
       vb.name = "coa-controller"
-      vb.memory = "10000"
+      vb.memory = "13312"
       vb.cpus = 4
       vb.customize ["modifyvm", :id, "--nic3", "natnetwork"]
       vb.customize ["modifyvm", :id, "--nat-network3", "coa-nat"]
