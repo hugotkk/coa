@@ -866,3 +866,11 @@ swift_devices_name: "KOLLA_SWIFT_DATA"
 
 # this is UDP port
 #hacluster_corosync_port: 5405
+
+# swift_extra_ring_files:
+#   - object-1.builder
+#   - object-1.ring.gz
+#   - account-1.builder
+#   - account-1.ring.gz
+#   - container-1.builder
+#   - container-1.ring.gz
