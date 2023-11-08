@@ -542,7 +542,7 @@ barbican_library_path: "/usr/lib/libCryptoki2_64.so"
 #cinder_coordination_backend: "{{ 'redis' if enable_redis|bool else 'etcd' if enable_etcd|bool else '' }}"
 
 # Valid options are [ nfs, swift, ceph ]
-#cinder_backup_driver: "ceph"
+cinder_backup_driver: "swift"
 #cinder_backup_share: ""
 #cinder_backup_mount_options_nfs: ""
 
