@@ -1,4 +1,4 @@
-# OpenStack Hands-on with Vagrant
+# OpenStack Hands-on with Vagrant (devstack)
 
 This repository delivers a Vagrant setup tailored for individuals eager to dive into OpenStack hands-on. 
 
@@ -20,6 +20,7 @@ A Controller and Compute on VirtualBox will be setup.
 **Clone this repository**:
 ```
 git clone git@github.com:hugotkk/coa.git
+cd devstack
 ```
 
 **Network Configuration**:
